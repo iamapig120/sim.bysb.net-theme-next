@@ -195,6 +195,7 @@ social:
   #Google: https://plus.google.com/yourname || google
   Twitter: https://twitter.com/LittleHandle || twitter
   Weibo: https://weibo.com/u/1841309335 || weibo
+  Taobao: https://shop532002267.taobao.com/ || shopping-cart
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -213,7 +214,9 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  手柄君的小阁: https://www,bysb.net
+  Taobao SimShop: https://www.bysb.net
+  SimPad Drivers: https:/bysb.net/simdrive
+  Handle's Blog: https://www.bysb.net
   #Title: http://example.com
 
 # Sidebar Avatar
