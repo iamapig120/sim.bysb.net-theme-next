@@ -42,6 +42,15 @@ NexT.utils = {
     });
   },
 
+  registerExtURL: function() {
+    $('.exturl').on('click', function() {
+      var $exturl = $(this).attr('data-url');
+      var $decurl = decodeURIComponent(escape(window.atob($exturl)));
+      window.open($decurl, '_blank', 'noopener');
+      return false;
+    });
+  },
+
   /**
    * One-click copy code support.
    */
@@ -129,8 +138,14 @@ NexT.utils = {
         $(this).addClass('active').siblings().removeClass('active');
         var tActive = $(this).find('a').attr('href');
         $(tActive).addClass('active').siblings().removeClass('active');
+        // Trigger event
+        document.querySelector(tActive).dispatchEvent(new Event('tabs:click', {
+          bubbles: true
+        }));
       }
     });
+
+    window.dispatchEvent(new Event('tabs:register'));
   },
 
   registerCanIUseTag: function() {
@@ -328,5 +343,19 @@ NexT.utils = {
       ? (sidebarPadding * 2) + sidebarNavHeight + sidebarOffset + this.getSidebarb2tHeight()
       : (sidebarPadding * 2) + (sidebarNavHeight / 2);
     return sidebarSchemePadding;
+  },
+
+  getScript: function(url, callback, condition) {
+    if (condition) {
+      callback();
+    } else {
+      $.ajax({
+        type: 'GET',
+        url: url,
+        dataType: 'script',
+        cache: true,
+        success: callback
+      });
+    }
   }
 };
