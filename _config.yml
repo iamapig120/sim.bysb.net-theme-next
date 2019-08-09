@@ -158,6 +158,8 @@ menu:
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
+  taobao: https://shop532002267.taobao.com || shopping-cart
+  shoppy: https://shoppy.gg/@Handle || tags
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -190,12 +192,13 @@ site_state: true
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
-  GitHub: https://github.com/iamapig120 || github
+  GitHub: //github.com/iamapig120 || github
   E-Mail: mailto:mail@bysb.net || envelope
   #Google: https://plus.google.com/yourname || google
-  Twitter: https://twitter.com/LittleHandle || twitter
-  Weibo: https://weibo.com/u/1841309335 || weibo
-  Taobao: https://shop532002267.taobao.com/ || shopping-cart
+  Twitter: //twitter.com/LittleHandle || twitter
+  Weibo: //weibo.com/u/1841309335 || weibo
+  Taobao: //shop532002267.taobao.com/ || shopping-cart
+  shoppy: //shoppy.gg/@Handle || tags
   RSS: /atom.xml || rss
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
@@ -215,9 +218,10 @@ links_title: Links
 links_layout: block
 #links_layout: inline
 links:
-  Taobao SimShop: https://shop532002267.taobao.com/
-  SimPad Drivers: https:/bysb.net/simdrive
-  Handle's Blog: https://www.bysb.net
+  Taobao SimShop: //shop532002267.taobao.com/
+  Shoppy Online Shop: //shoppy.gg/@Handle
+  SimPad Drivers: //bysb.net/simdrive
+  Handle's Blog: //www.bysb.net
   #Title: http://example.com
 
 # Sidebar Avatar
