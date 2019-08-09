@@ -196,16 +196,16 @@ social:
   E-Mail: mailto:mail@bysb.net || envelope
   #Google: https://plus.google.com/yourname || google
   Twitter: //twitter.com/LittleHandle || twitter
+  #Taobao: //shop532002267.taobao.com/ || shopping-cart
+  #shoppy: //shoppy.gg/@Handle || tags
+  FB Page: //www.facebook.com/SimDevices || facebook
   Weibo: //weibo.com/u/1841309335 || weibo
-  Taobao: //shop532002267.taobao.com/ || shopping-cart
-  shoppy: //shoppy.gg/@Handle || tags
-  RSS: /atom.xml || rss
-  #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
+  RSS: /atom.xml || rss
 
 social_icons:
   enable: true
