@@ -1,23 +1,21 @@
 ---
 name: Feature Request
-about: Suggest an idea for this project.
+about: Suggest an idea for this project
 title: ''
 labels: Feature Request
 assignees: ''
 
 ---
 
-<!-- ATTENTION!
-IF YOU DON'T FILL OUT THE FOLLOWING INFORMATION WE MIGHT CLOSE YOUR ISSUE WITHOUT INVESTIGATING.
-如果你不填写下面的内容，我们可能会直接关闭你的 Issue。
--->
+Please follow this Issue template to provide relevant information, such as source code repositories, blog links, and screenshots, which will help us investigate.
+请按照此 Issue 模版提供相关信息，例如源码仓库、博客链接和屏幕截图，这将有助于我们进行调查。
 
-## I agree and want to create new issue <!-- 我确认我已经查看了 -->
+## Issue Checklist <!-- 我确认我已经查看了 -->
+<!-- Change [ ] to [x] to select (将 [ ] 换成 [x] 来选择) -->
 
-<!-- Check all with [x], not [ x] or [x ] (把 [ ] 换成 [x] 来选择，而非 [ x] 或者 [x ]) -->
-- [ ] I have already viewed [Hexo Docs page](https://hexo.io/docs/), especially [Templates](https://hexo.io/docs/templates.html), [Variables](https://hexo.io/docs/variables.html), [Helpers](https://hexo.io/docs/helpers.html) and [Troubleshooting](https://hexo.io/docs/troubleshooting.html).
-- [ ] I have already viewed [NexT Documentation Site](http://theme-next.org/docs/).
-- [ ] I have searched for current [issues](https://github.com/theme-next/hexo-theme-next/issues?utf8=%E2%9C%93&q=is%3Aissue) which does not help me.
+- [ ] I am using [the latest](https://github.com/theme-next/hexo-theme-next/releases/latest) version of NexT.
+- [ ] I have read the relevant documents of [Hexo](https://hexo.io/docs/) and [NexT](https://theme-next.org/docs/).
+- [ ] I have reviewed the latest Roadmap on GitHub and searched for current [issues](https://github.com/theme-next/hexo-theme-next/issues), which does not help me.
 
 ***
 
@@ -25,8 +23,10 @@ IF YOU DON'T FILL OUT THE FOLLOWING INFORMATION WE MIGHT CLOSE YOUR ISSUE WITHOU
 
 
 ## Actual behavior <!-- 实际行为 -->
-* Links to demo site with this feature: N/A
-* Links to repository or source code of the blog: N/A
+<!-- Please provide at least one of the following information (请至少提供以下的一项信息) -->
+
+- Links to demo site with this feature: N/A
+- Links to repository or source code of the blog: N/A
 
 
 ## Steps to reproduce the behavior <!-- 重现步骤 -->
@@ -34,12 +34,4 @@ IF YOU DON'T FILL OUT THE FOLLOWING INFORMATION WE MIGHT CLOSE YOUR ISSUE WITHOU
 2. N/A
 3. N/A
 
-
-**NexT Scheme:**
-<!-- Check needed with [x], not [ x] or [x ] (把 [ ] 换成 [x] 来选择，而非 [ x] 或者 [x ]) -->
-
-- [ ] All schemes
-- [ ] Muse
-- [ ] Mist
-- [ ] Pisces
-- [ ] Gemini
+## Other Information <!-- Like Browser, System, Screenshots -->
