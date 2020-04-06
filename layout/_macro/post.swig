@@ -5,7 +5,7 @@
     <link itemprop="mainEntityOfPage" href="{{ post.permalink }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="{{ url_for(theme.avatar.url or theme.images + '/avatar.gif') }}">
+      <meta itemprop="image" content="{{ url_for_lang(theme.avatar.url or theme.images + '/avatar.gif') }}">
       <meta itemprop="name" content="{{ author }}">
       <meta itemprop="description" content="{{ description }}">
     </span>
@@ -85,7 +85,7 @@
               <span class="post-meta-item-text">{{ __('post.in') }}</span>
               {%- for cat in post.categories.toArray() %}
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="{{ url_for(cat.path) }}" itemprop="url" rel="index"><span itemprop="name">{{ cat.name }}</span></a>
+                  <a href="{{ url_for_lang(cat.path) }}" itemprop="url" rel="index"><span itemprop="name">{{ cat.name }}</span></a>
                 </span>
 
                 {%- set cat_length = post.categories.length %}
@@ -98,7 +98,7 @@
 
           {# LeanCloud PageView #}
           {%- if theme.leancloud_visitors.enable or (theme.valine.enable and theme.valine.appid and theme.valine.appkey and theme.valine.visitor) %}
-            <span id="{{ url_for(post.path) }}" class="post-meta-item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">
+            <span id="{{ url_for_lang(post.path) }}" class="post-meta-item leancloud_visitors" data-flag-title="{{ post.title }}" title="{{ __('post.views') }}">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -171,7 +171,7 @@
       {%- if post.photos and post.photos.length %}
         <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
           {%- for photo in post.photos %}
-            <img src="{{ url_for(photo) }}" itemprop="contentUrl">
+            <img src="{{ url_for_lang(photo) }}" itemprop="contentUrl">
           {%- endfor %}
         </div>
       {%- endif %}
@@ -182,7 +182,7 @@
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
-              <a class="btn" href="{{ url_for(post.path) }}">
+              <a class="btn" href="{{ url_for_lang(post.path) }}">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -193,7 +193,7 @@
           <!--noindex-->
           {%- if theme.read_more_btn %}
             <div class="post-button">
-              <a class="btn" href="{{ url_for(post.path) }}#more" rel="contents">
+              <a class="btn" href="{{ url_for_lang(post.path) }}#more" rel="contents">
                 {{ __('post.read_more') }} &raquo;
               </a>
             </div>
@@ -239,7 +239,7 @@
           {%- endif %}
           <div class="post-tags">
             {%- for tag in post.tags.toArray() %}
-              <a href="{{ url_for(tag.path) }}" rel="tag">{{ tag_indicate }} {{ tag.name }}</a>
+              <a href="{{ url_for_lang(tag.path) }}" rel="tag">{{ tag_indicate }} {{ tag.name }}</a>
             {%- endfor %}
           </div>
         {%- endif %}
