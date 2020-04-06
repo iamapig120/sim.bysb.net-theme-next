@@ -1,7 +1,7 @@
 <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
   {%- if theme.avatar.url %}
     <img class="site-author-image" itemprop="image" alt="{{ author }}"
-      src="{{ url_for_lang(theme.avatar.url) }}">
+      src="{{ url_for(theme.avatar.url) }}">
   {%- endif %}
   <p class="site-author-name" itemprop="name">{{ author }}</p>
   <div class="site-description" itemprop="description">{{ description }}</div>
@@ -13,7 +13,7 @@
     {%- if config.archive_dir != '/' and site.posts.length > 0 %}
       <div class="site-state-item site-state-posts">
         {%- if theme.menu.archives %}
-          <a href="{{ url_for_lang(theme.menu.archives.split('||')[0] | trim) }}">
+          <a href="{{ url_for(theme.menu.archives.split('||')[0] | trim) }}">
         {% else %}
           <a href="{{ url_for_lang(config.archive_dir) }}">
         {%- endif %}
@@ -29,7 +29,7 @@
       <div class="site-state-item site-state-categories">
         {%- if hasCategoriesPage %}
           {%- if theme.menu.categories %}
-            <a href="{{ url_for_lang(theme.menu.categories.split('||')[0] | trim) }}">
+            <a href="{{ url_for(theme.menu.categories.split('||')[0] | trim) }}">
           {% else %}
             <a href="{{ url_for_lang(config.category_dir) + '/' }}">
           {%- endif %}
@@ -46,7 +46,7 @@
       <div class="site-state-item site-state-tags">
         {%- if hasTagsPage %}
           {%- if theme.menu.tags %}
-            <a href="{{ url_for_lang(theme.menu.tags.split('||')[0] | trim) }}">
+            <a href="{{ url_for(theme.menu.tags.split('||')[0] | trim) }}">
           {% else %}
             <a href="{{ url_for_lang(config.tag_dir) + '/' }}">
           {%- endif %}
@@ -97,7 +97,7 @@
 
 {%- if theme.creative_commons.license and theme.creative_commons.sidebar %}
   <div class="cc-license motion-element" itemprop="license">
-  {%- set ccImage = '<img src="' + url_for_lang(theme.images + '/cc-' + theme.creative_commons.license + '.svg') + '" alt="Creative Commons">' %}
+  {%- set ccImage = '<img src="' + url_for(theme.images + '/cc-' + theme.creative_commons.license + '.svg') + '" alt="Creative Commons">' %}
     {{ next_url(ccURL, ccImage, {class: 'cc-opacity'}) }}
   </div>
 {%- endif %}
