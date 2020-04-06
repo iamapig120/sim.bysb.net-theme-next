@@ -29,6 +29,8 @@
         <img class="custom-logo-image" src="{{ theme.custom_logo }}" alt="{{ title }}">
       </a>
     {%- endif %}
+
+    <p class="site-subtitle" itemprop="description">{{ partial('_partials/languages.swig', {}, {cache: theme.cache.enable}) }}</p>
   </div>
 
   <div class="site-nav-right">
