@@ -171,9 +171,9 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: https://secure.gravatar.com/avatar/166afae0dc7ed1e227486ebb7e3bcbce?s=512&r=x #/images/avatar.gif
+  url: //secure.gravatar.com/avatar/166afae0dc7ed1e227486ebb7e3bcbce?s=512&r=x #/images/avatar.gif
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar would be rotated with the cursor.
   rotated: false
 
@@ -597,9 +597,9 @@ comments:
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
-  count: true
+  enable: true
+  shortname: simdevices
+  count: false
   #post_meta_order: 0
 
 # DisqusJS
