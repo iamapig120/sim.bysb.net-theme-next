@@ -18,7 +18,7 @@ hexo.extend.helper.register('next_js', function(...urls) {
 hexo.extend.helper.register('next_vendors', function(url) {
   if (url.startsWith('//')) return url;
   const internal = hexo.theme.config.vendors._internal;
-  return this.url_for_lang(`${internal}/${url}`);
+  return this.url_for(`${internal}/${url}`);
 });
 
 hexo.extend.helper.register('post_edit', function(src) {
@@ -51,7 +51,7 @@ hexo.extend.helper.register('post_nav', function(post) {
 });
 
 hexo.extend.helper.register('gitalk_md5', function(path) {
-  let str = this.url_for_lang(path);
+  let str = this.url_for(path);
   str.replace('index.html', '');
   return crypto.createHash('md5').update(str).digest('hex');
 });
@@ -72,7 +72,7 @@ hexo.extend.helper.register('canonical', function() {
 hexo.extend.helper.register('i18n_path', function(language) {
   const { path, lang } = this.page;
   const base = path.startsWith(lang) ? path.slice(lang.length + 1) : path;
-  return this.url_for_lang(`${this.languages.indexOf(language) === 0 ? '' : '/' + language}/${base}`);
+  return this.url_for(`${this.languages.indexOf(language) === 0 ? '' : '/' + language}/${base}`);
 });
 
 /**
