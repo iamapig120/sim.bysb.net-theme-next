@@ -168,11 +168,13 @@ sidebar:
 
 # Sidebar Avatar
 avatar:
-  # Replace the default image and set the url here.
-  url: #/images/avatar.gif
-  # If true, the avatar will be dispalyed in circle.
+  # In theme directory (source/images): /images/avatar.gif
+  # In site directory (source/uploads): /uploads/avatar.gif
+  # You can also use other linking images.
+  url: https://secure.gravatar.com/avatar/166afae0dc7ed1e227486ebb7e3bcbce?s=512&r=x #/images/avatar.gif
+  # If true, the avatar would be dispalyed in circle.
   rounded: false
-  # If true, the avatar will be rotated with the cursor.
+  # If true, the avatar would be rotated with the cursor.
   rotated: false
 
 # Posts / Categories / Tags in sidebar.
@@ -216,17 +218,6 @@ links:
   SimPad Drivers: //bysb.net/simdrive
   Handle's Blog: //www.bysb.net
   #Title: http://example.com
-
-# Sidebar Avatar
-avatar:
-  # In theme directory (source/images): /images/avatar.gif
-  # In site directory (source/uploads): /uploads/avatar.gif
-  # You can also use other linking images.
-  url: https://secure.gravatar.com/avatar/166afae0dc7ed1e227486ebb7e3bcbce?s=512&r=x #/images/avatar.gif
-  # If true, the avatar would be dispalyed in circle.
-  rounded: false
-  # If true, the avatar would be rotated with the cursor.
-  rotated: false
 
 # Table Of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
