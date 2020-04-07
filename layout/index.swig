@@ -8,7 +8,9 @@
 {% block content %}
 
   {%- for post in page.posts.toArray() %}
-    {{ partial('_macro/post.swig', {post: post, is_index: true}) }}
+    {% if page.lang === post.lang %}             // Edited
+      {{ partial('_macro/post.swig', {post: post, is_index: true}) }}
+    {% endif %}        // Edited
   {%- endfor %}
 
   {% include '_partials/pagination.swig' %}
