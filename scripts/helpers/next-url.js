@@ -13,7 +13,7 @@ hexo.extend.helper.register('next_url', function(path, text, options = {}) {
   const theme = hexo.theme.config;
   let exturl = '';
   let tag = 'a';
-  let attrs = { href: this.url_for(path) };
+  let attrs = { href: this.url_for_lang(path) };
 
   // If `exturl` enabled, set spanned links only on external links.
   if (theme.exturl && data.protocol && data.hostname !== siteHost) {
