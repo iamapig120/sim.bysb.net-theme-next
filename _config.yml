@@ -128,7 +128,7 @@ menu:
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
-  taobao: https://shop532002267.taobao.com || fa fa-shopping-cart
+  taobao: https://shop532002267.taobao.com/#hd || fa fa-shopping-cart
   shoppy: https://shoppy.gg/@Handle || fa fa-tags
 
 # Enable / Disable menu icons / item badges.
@@ -198,7 +198,7 @@ social:
   #YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
-  RSS: /atom.xml || rss
+  RSS: /atom.xml || fab fa-rss
 
 social_icons:
   enable: true
