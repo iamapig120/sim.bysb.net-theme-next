@@ -30,7 +30,7 @@
       </a>
     {%- endif %}
 
-    <p class="site-subtitle" itemprop="description">{{ partial('_partials/languages.swig', {}, {cache: false}) }}</p>
+    <p class="site-subtitle" itemprop="description">{{ partial('_partials/languages.swig', {}, {cache: theme.cache.enable}) }}</p>
   </div>
 
   <div class="site-nav-right">
