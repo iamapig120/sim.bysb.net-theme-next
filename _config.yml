@@ -129,7 +129,7 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   taobao: https://shop532002267.taobao.com#hd || fa fa-shopping-cart
-  shopify: https://simshop.bysb.net/ || fab fa-shopify
+  simshop: https://simshop.bysb.net/ || fab fa-store-alt
   shoppy: https://shoppy.gg/@Handle || fa fa-tags
 
 # Enable / Disable menu icons / item badges.
@@ -215,7 +215,8 @@ links_settings:
 
 links:
   Taobao SimShop: //shop532002267.taobao.com/
-  Shoppy Online Shop: //shoppy.gg/@Handle
+  Online Shop: //simshop.bysb.net
+  Shoppy Shop: //shoppy.gg/@Handle
   SimPad Drivers: //bysb.net/simdrive
   Handle's Blog: //www.bysb.net
   #Title: http://example.com
