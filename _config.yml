@@ -129,7 +129,8 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   taobao: https://shop532002267.taobao.com#hd || fa fa-shopping-cart
-  simshop: https://simshop.bysb.net/ || fab fa-store-alt
+  #simshop: https://simshop.bysb.net/ || fab fa-store-alt
+  simshop: https://simshop.bysb.net/ || fa fa-store-alt
   shoppy: https://shoppy.gg/@Handle || fa fa-tags
 
 # Enable / Disable menu icons / item badges.
